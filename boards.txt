@@ -1,9 +1,9 @@
 menu.cpu=Processor
 
 ######################################
-## Sensebender Micro
+## GetWired MCU Module
 
-MysensorsMicro.name=Sensebender Micro
+MysensorsMicro.name=GetWired MCU
 
 MysensorsMicro.upload.tool=arduino:avrdude
 MysensorsMicro.upload.protocol=arduino
@@ -22,7 +22,7 @@ MysensorsMicro.bootloader.file=DualOptiboot/optiboot_atmega328_pro_8MHz.hex
 MysensorsMicro.build.board=AVR_MICRO8
 MysensorsMicro.build.core=arduino:arduino
 MysensorsMicro.build.variant=micro
-MysensorsMicro.build.mcu=atmega328p
+MysensorsMicro.build.mcu=atmega328pb
 #MysensorsMicro.build.f_cpu=8000000L
 
 MysensorsMicro.menu.cpu.8Mhz=Atmega328 8Mhz
