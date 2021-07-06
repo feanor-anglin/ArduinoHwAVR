@@ -471,7 +471,7 @@ void appStart(uint8_t rstFlags) __attribute__ ((naked));
 #define SPI_2XCLOCK_MASK 0x01  // SPI2X = bit 0 on SPSR
 #define SPI_CLOCK_DIV2 0x04
 
-#if defined(__AVR_ATmega168__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega88) || defined(__AVR_ATmega8__) || defined(__AVR_ATmega88__)
+#if defined(__AVR_ATmega168__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega88) || defined(__AVR_ATmega8__) || defined(__AVR_ATmega88__) || defined(__AVR_ATmega328PB__))
   #define FLASHSS_DDR     DDRB
   #define FLASHSS_PORT    PORTB
   #define FLASHSS         PINB0
@@ -540,7 +540,7 @@ void CheckFlashImage() {
   watchdogConfig(WATCHDOG_OFF);
 
   //SPI INIT
-#if defined(__AVR_ATmega168__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega88) || defined(__AVR_ATmega8__) || defined(__AVR_ATmega88__)
+#if defined(__AVR_ATmega168__) || defined(__AVR_ATmega328P__) || defined(__AVR_ATmega88) || defined(__AVR_ATmega8__) || defined(__AVR_ATmega88__) || defined(__AVR_ATmega328PB__))
   DDRB |= _BV(FLASHSS) | _BV(SS) | _BV(PB3) | _BV(PB5); //OUTPUTS for FLASH_SS and SS, MOSI, SCK
   FLASH_UNSELECT; //unselect FLASH chip
   PORTB |= _BV(SS); //set SS HIGH
