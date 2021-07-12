@@ -329,11 +329,8 @@ const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
 //
 // SERIAL_PORT_HARDWARE_OPEN  Hardware serial ports which are open for use.  Their RX & TX
 //                            pins are NOT connected to anything by default.
-#define SERIAL_PORT_MONITOR   		Serial
 #define SERIAL_PORT_HARDWARE  		Serial
-#define SERIAL_PORT_HARDWARE_OPEN   Serial
-
-#define SERIAL_PORT_HARDWARE1       Serial1
-#define SERIAL_PORT_HARDWARE_OPEN1  Serial1
+#define SERIAL_PORT_HARDWARE_OPEN  	Serial1
+#define SERIAL_PORT_MONITOR   		Serial1
 
 #endif
